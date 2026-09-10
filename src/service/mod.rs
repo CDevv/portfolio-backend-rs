@@ -22,8 +22,6 @@ pub struct ErrorResponder {
     pub message: String,
 }
 
-// The following impl's are for easy conversion of error types.
-
 impl From<DbErr> for ErrorResponder {
     fn from(err: DbErr) -> ErrorResponder {
         ErrorResponder {
