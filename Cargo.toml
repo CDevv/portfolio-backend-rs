@@ -4,4 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-rocket = "0.5.1"
+envie = "0.2.1"
+rocket = { version = "0.5.1", features = ["json"] }
+sea-orm = { version = "2.0.2", features = [ "sqlx-mysql", "runtime-tokio-native-tls", "macros" ] }
+serde = { version = "1.0.229", features = ["derive"] }
