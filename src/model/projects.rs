@@ -14,7 +14,7 @@ pub struct Model {
     pub itch: Option<String>,
     pub weblink: Option<String>,
     #[sea_orm(has_many, via = "project_tags_link")]
-    pub project_tags: HasMany<model::project_tags::Entity>,
+    pub tags: HasMany<model::project_tags::Entity>,
 }
 
 impl ActiveModelBehavior for ActiveModel {}
