@@ -8,3 +8,5 @@ envie = "0.2.1"
 rocket = { version = "0.5.1", features = ["json"] }
 sea-orm = { version = "2.0.2", features = [ "sqlx-mysql", "runtime-tokio-native-tls", "macros" ] }
 serde = { version = "1.0.229", features = ["derive"] }
+utoipa = { version = "5.5.0", features = ["rocket_extras"] }
+utoipa-swagger-ui = { version = "9.0.2", features = ["rocket"] }
